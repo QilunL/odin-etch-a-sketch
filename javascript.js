@@ -11,12 +11,18 @@ function fillGrid(n){
   }
 }
 
-function resetGrid(size){
+function resetGrid(){
   let squares = document.getElementById('container');
+  let userInput;
   while (squares.firstChild){
     squares.removeChild(squares.lastChild)
   }
-  fillGrid(size);
+  do {
+    userInput = prompt("Please enter desired board size(Max. 100 x 100)", "16");
+    userInput = parseInt(userInput);
+  }
+  while(userInput > 100);
+  fillGrid(userInput);
 }
 let defaultColor = "black";
 let color = defaultColor;

@@ -13,3 +13,15 @@
     background-color: white;
     
 }
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sizeButton{
+    font-size: x-large;
+    margin-top: 1em;
+    border-radius: 2em;
+}
